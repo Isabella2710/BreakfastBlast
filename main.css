@@ -1,0 +1,147 @@
+/* Website basic styling */ 
+a{ 
+Text-decoration: none; /* Text decoration not shown */
+} 
+
+/* Website top nav measurements */ 
+.topnav{
+top: 176px;
+position: fixed; /* fixed position to secure nav bar */ 
+width: 98vw;  /* Medium width */
+height: 9vw;  /* Medium height */
+background-color: white; /* Background color is white */
+} 
+
+/* Website top nav style */ 
+.topnav a{ 
+text-decoration: none; /* Text decoration not shown */
+color: black; /* text color*/
+padding: 2vw; /* Some padding */
+font-size: 25px; /* medium font size */
+Font-family: 'Arial black'; /* font is arial */
+cursor: pointer; /* Add a mouse pointer on hover */
+} 
+
+/* Website top nav style for hover */ 
+.topnav a:hover{
+background-color: #89fdff; /* background color is light blue */
+margin-left: -10px; /* moves to the left on hover */
+padding-left: 15px; /* moves to the left on hover */
+padding-right: 15px; /* moves to the left on hover */
+cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+/* Website top nav ul style */ 
+.topnav ul {
+  list-style-type: none; /* no text style */
+  margin: 0; /* no margin */
+  padding: 0; /* no padding */
+}
+
+/* Website button styling */ 
+.button {
+  background-color: transparent; /* Transparent */
+  float: left; /* positioning left */
+  padding: 9px 25px; /* adding some padding */
+  text-align: center; /* centered text */
+  text-decoration: none; /* no text decoration */
+  display: inline-block; /* position of button */
+  font-size: 16px; /* medium font size*/
+  Border: none; /* no border */
+  border-radius: 15px; /* rounded corners */
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+/* Website button transition */ 
+.button {
+ Transition: all 0.3s  ease 0s; /* Light transition for buttons */
+}
+
+/* Website button hover effect */ 
+.button:hover {
+background-color: #89fdff; /* Background color is light blue */
+font-size: 31px; /* bigger font size*/
+margin-left: -10px; /* moves to the left on hover */
+padding-left: 15px; /* moves to the left on hover */
+padding-right: 15px; /* moves to the left on hover */
+cursor: pointer; /* Add a mouse pointer on hover */
+} 
+
+/* Website back to top button to make navigation easier */ 
+#myBtn {
+  display: inline-block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Arial black'; 
+}
+
+/* Website back to top button hover effect */ 
+#myBtn:hover {
+background-color: #89fdff; /* Background color is light blue on hover */
+cursor : pointer; /* Add a mouse pointer on hover */
+}
+
+/* Website back to top button transition */ 
+#myBtn {
+  Transition: all 0.3s  ease 0s; /* Adds light transition on hover */
+} 
+
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+max-width: 1200px; /* medium sized max width */
+max-height: 1300px; /* medium sized max height */
+position: absolute; /* adjusting position */
+margin: auto; /* auto margin */
+top: 338px;  /* distance from top of page */
+left: -10px; /* distance from left */
+bottom: 255px; /* distance from bottom of page */
+}
+
+/* Fading animation styles */
+.fade {
+  -webkit-animation-name: fade; /* fading image transition */
+  -webkit-animation-duration: 2.5s; /* fading image duration */
+  animation-name: fade; /* fading image transition name */
+  animation-duration: 2.5s; /* fading image duration */
+}
+
+/* Fading animation details */
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Fading animation details */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Website main dishes recipe pages banner style*/
+.maindish-recipe-page-banner { 
+position: fixed;
+top: 608px;
+}
+
+/*Website side dishes recipe pages banner style*/
+.sidedish-recipe-page-banner {
+position: fixed;
+top: 875px;   
+} 
+
+/*Website side dishes recipe pages banner style*/
+.writing-paragraphs {
+position: fixed;
+    top: 283px;
+}

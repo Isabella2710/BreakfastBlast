@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head> 
+<!-- Website title --> 
+<title>Breakfast Blast</title>  
+<!-- Link to stylesheet --> 
+<link rel="stylesheet" href="main.css">  
+</head>
+
+<body>  
+<!-- Website banner --> 
+<img src="images/keybreakfastblastbanner.jpg" height="157" width="1424" title="Breakfast Blast" alt="Breakfastblast banner"> 
+</body> 
+    
+    <br> 
+<!-- Website navigation bar --> 
+<nav class="topnav"> 
+<ul> 
+<a class="button" title="Home" href="index.html">Home</a>
+<a class="button" title="3 Ingredient Blasts" href="threeingredientblasts.html">3 Ingredient Blasts</a>
+<a class="button" title="4 Ingredient Blasts" href="fouringredientblasts.html">4 Ingredient Blasts</a> 
+<a class="button" title="Weekend Blasts" href="weekendblasts.html">Weekend Blasts</a>
+</ul> 
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/pancakepicslideshow.jpg" title="hotcakes" style="width:159%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/cocaomugpicslideshow.jpg" title="cocao mug" style="width:159%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/eggtoastpicslideshow.jpg" title="egg toast" style="width:159%">
+  </div>
+    
+    <div class="mySlides fade">
+    <img src="images/musliepicslieshow.jpg" title="muslie mix" style="width:159%">
+  </div>
+    
+    <div class="mySlides fade">
+    <img src="images/chewydatepicslideshow.jpg" title="peanut butter dates" style="width:159%">
+  </div>
+ 
+    <div class="mySlides fade">
+    <img src="images/rasberryjampicslideshow.jpg" title="rasberry jam" style="width:159%">
+  </div>
+
+<!-- Slideshow javascript code -->
+<script> var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+    
+<br> 
