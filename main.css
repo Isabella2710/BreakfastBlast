@@ -1,3 +1,17 @@
+/* Banner styling */ 
+.banner { 
+height: auto; 
+width: 1408px; 
+} 
+
+/* When the screen is less than 900px wide the banner will become smaller */
+@media screen and (max-width: 900px) {
+  .banner {
+height: auto; 
+width: auto; 
+  }
+} 
+
 /* Website basic styling */ 
 a{ 
 Text-decoration: none; /* Text decoration not shown */
@@ -5,8 +19,8 @@ Text-decoration: none; /* Text decoration not shown */
 
 /* Website top nav measurements */ 
 .topnav{
-top: 176px;
-position: fixed; /* fixed position to secure nav bar */ 
+top: 176px; /* Position from top of page */ 
+position: absolute; /* Fixed position to secure nav bar */ 
 width: 98vw;  /* Medium width */
 height: 9vw;  /* Medium height */
 background-color: white; /* Background color is white */
@@ -15,12 +29,27 @@ background-color: white; /* Background color is white */
 /* Website top nav style */ 
 .topnav a{ 
 text-decoration: none; /* Text decoration not shown */
-color: black; /* text color*/
-padding: 2vw; /* Some padding */
-font-size: 25px; /* medium font size */
+color: black; /* black text color for visability */
+padding: 2vw; /* Small padding */
+font-size: 25px; /* medium font size for readability */
 Font-family: 'Arial black'; /* font is arial */
 cursor: pointer; /* Add a mouse pointer on hover */
 } 
+
+/* When the screen is less than 900px wide the links will stack vertically instead of horizontally */
+@media screen and (max-width: 900px) {
+  .topnav a, .topnav input[type=text] {
+	float: none; /* no float */
+	display: block; /* display is in block */
+	text-align: left; /* Text aligned to left */
+	width: 100%; /* full width */
+	margin: 0; /* no margin */
+	padding: 14px; /* small amount of padding */
+  }
+  .topnav input[type=text] {
+	border: 1px solid #ccc; /* small grey border */
+  } 
+}
 
 /* Website top nav style for hover */ 
 .topnav a:hover{
@@ -40,60 +69,32 @@ cursor: pointer; /* Add a mouse pointer on hover */
 
 /* Website button styling */ 
 .button {
-  background-color: transparent; /* Transparent */
+  background-color: transparent; /* transparent or no background color */
   float: left; /* positioning left */
-  padding: 9px 25px; /* adding some padding */
+  padding: 9px 25px; /* some small padding */
   text-align: center; /* centered text */
   text-decoration: none; /* no text decoration */
-  display: inline-block; /* position of button */
+  display: inline-block; /* position of button is inline-block */
   font-size: 16px; /* medium font size*/
   Border: none; /* no border */
   border-radius: 15px; /* rounded corners */
-  cursor: pointer; /* Add a mouse pointer on hover */
+  cursor: pointer; /* add a mouse pointer on hover */
 }
 
 /* Website button transition */ 
 .button {
- Transition: all 0.3s  ease 0s; /* Light transition for buttons */
+ Transition: all 0.3s  ease 0s; /* light transition for buttons */
 }
 
 /* Website button hover effect */ 
 .button:hover {
-background-color: #89fdff; /* Background color is light blue */
+background-color: #89fdff; /* background color is light blue */
 font-size: 31px; /* bigger font size*/
 margin-left: -10px; /* moves to the left on hover */
 padding-left: 15px; /* moves to the left on hover */
 padding-right: 15px; /* moves to the left on hover */
 cursor: pointer; /* Add a mouse pointer on hover */
-} 
-
-/* Website back to top button to make navigation easier */ 
-#myBtn {
-  display: inline-block; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: white; /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  font-family: 'Arial black'; 
-}
-
-/* Website back to top button hover effect */ 
-#myBtn:hover {
-background-color: #89fdff; /* Background color is light blue on hover */
-cursor : pointer; /* Add a mouse pointer on hover */
-}
-
-/* Website back to top button transition */ 
-#myBtn {
-  Transition: all 0.3s  ease 0s; /* Adds light transition on hover */
+box-shadow: 0 0 23px black; /* small black box-shadow */
 } 
 
 * {box-sizing:border-box}
@@ -103,9 +104,20 @@ max-width: 1200px; /* medium sized max width */
 max-height: 1300px; /* medium sized max height */
 position: absolute; /* adjusting position */
 margin: auto; /* auto margin */
-top: 338px;  /* distance from top of page */
-left: -10px; /* distance from left */
-bottom: 255px; /* distance from bottom of page */
+top: 329px;  /* distance from top of page */
+right: 303px; /* distance from right side of page */
+}
+
+/* When the screen is less than 900px wide the slideshow image will become smaller */
+@media screen and (max-width: 900px) {
+  .slideshow-container {
+max-width: 300px; /* medium sized max width */
+max-height: 600px; /* medium sized max height */
+position: absolute; /* adjusting position */
+margin: auto; /* auto margin */
+top: 482px;  /* distance from top of page */
+right: auto; /* distance from right side of page */
+  }
 }
 
 /* Fading animation styles */
@@ -116,7 +128,7 @@ bottom: 255px; /* distance from bottom of page */
   animation-duration: 2.5s; /* fading image duration */
 }
 
-/* Fading animation details */
+/* Fading animation details from W3schools */
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -128,20 +140,180 @@ bottom: 255px; /* distance from bottom of page */
   to {opacity: 1}
 }
 
-/*Website main dishes recipe pages banner style*/
-.maindish-recipe-page-banner { 
-position: fixed;
-top: 608px;
-}
-
-/*Website side dishes recipe pages banner style*/
-.sidedish-recipe-page-banner {
-position: fixed;
-top: 875px;   
-} 
-
 /*Website side dishes recipe pages banner style*/
 .writing-paragraphs {
-position: fixed;
-    top: 283px;
+position: absolute; /* adjusting position */
+width: 791px; /* medium sized width */
+height: 198px; /* medium sized height */
+left: 12px; /* small distance from the left */
+top: 318px; /* close position from the top of page */
+} 
+
+/* When the screen is less than 900px wide this element will become smaller to fit the smaller screen */
+@media screen and (max-width: 900px) {
+  .writing-paragraphs {
+height: 95px; /* smaller height to fit smaller screen */ 
+width: 50px; /* smaller width to fit smaller screen */ 
+position: absolute; /* adjusting position */
+margin: auto; /* auto margin */
+top: 595px;  /* distance from top of page */
+right: auto; /* distance from right side of page */
+bottom: 275px; /* distance from bottom of page */
+  }
 }
+
+/*Website paint brsh stroke effects */
+.textwithblurredbg { 
+width: 664px; /* medium sized width */
+height: 432px; /* medium sized height */
+margin: 4px; /* small margin */
+display: inline-block; /* fixed inline display */
+position: absolute; /* position to allow movement of element */
+left: -328px; /* small position from left side */
+top: 2px; /* small position from top */
+}  
+
+/* When the screen is less than 900px wide the slideshow image will become smaller */
+@media screen and (max-width: 900px) {
+  .textwithblurredbg {
+position: absolute; /* adjusting position */
+margin: auto; /* auto margin */
+top: 142px;  /* distance from top of page */
+left: -930px; /* distance from left side of page */
+  }
+}
+
+/*Website paint brsh stroke writing effects */
+.textwithblurredbg h2 { 
+Font-family: 'Arial black'; /* font is arial */
+font-size: 59px; /* large font size */
+top: 2px;  /* small position from top of page */
+}
+
+/*Website paint brsh stroke image effects */
+.textwithblurredbg img { 
+width: 768px; /* medium sized width */
+height: 261px; /* medium sized height */
+Transition: all 0.2s  ease 0s; /* Adds light/small transition on hover */
+position: absolute; /* position to allow specific movement of element */
+left: -436px; /* small position from left side */
+top: 29px; /* small position from top */
+}
+
+/*Website paint brsh stroke image hover effects */
+.textwithblurredbg:hover img { 
+filter:blur(4px) brightness(81%); /* blurred filter to image with added brightness on hover */
+ -webkit-filter: blur(8px); /* blurred filter to image with webkit effect */
+box-shadow: 0 0 49px #00fbff; 
+border-radius: 17px; /* rounded corners */
+cursor: pointer; /* Add a mouse pointer on hover */ 
+height: 238px; /* medium sized height */
+}
+
+/*Website paint brsh stroke non image effects */
+.textwithblurredbg :not(img){
+position: absolute; /* position to allow specific movement of element */
+left: -384px; /* small position from left side */
+top: 18px; /* small position from top */
+z-index: 1; /* small stack order of element */
+text-align: center;  /* centered text within the element */
+width: 100%;  /* full width */
+opacity: 0; /* no opacity */
+Transition: all 0.3s  ease 0s; /* Adds light/small transition on hover */
+}
+
+/*Website paint brsh stroke non image hover effects */
+.textwithblurredbg:hover :not(img) { 
+opacity: 1; /* light opacity */
+border-radius: 24px; /* rounded corners */
+} 
+
+.image-table table { 
+width: 383px; /* large width to fit readable images */ 
+height: 607px; /* large height to fit readable images */
+position: absolute; /* adjustable position */ 
+top: 549px; /* large way from top of the page */ 
+margin: 32px; /* medium margin */
+}
+
+/* When the screen is less than 900px wide this element will become smaller to fit the smaller screen */
+@media screen and (max-width: 900px) {
+  .image-table table {
+height: 400px; /* smaller height */
+width: 130px; /* smaller width */
+position: absolute; /* adjusting position */
+margin: 32px; /* small margin */
+top: 754px;  /* larger distance from top of page due to compressed screen size */
+  }
+} 
+
+.image-table-2 {
+width: 383px; /* large width to fit readable images */
+height: 607px; /* large height to fit readable images */
+position: absolute; /* adjustable position */ 
+top: 1168px; /* larger way from top of the page */ 
+margin: 32px; /* medium margin */      
+} 
+
+/* When the screen is less than 900px wide this element will become smaller to fit the smaller screen */
+@media screen and (max-width: 900px) {
+  .image-table-2 table {
+height: 400px; /* smaller height */
+width: 130px; /* smaller width */
+position: absolute; /* adjusting position */
+margin: auto; /* auto margin */
+top: 167px;  /* larger distance from top of page */
+  }
+}  
+
+.image-table-3 { 
+width: 383px; /* large width to fit readable images */
+height: 607px; /* large height to fit readable images */
+position: absolute; /* adjustable position */ 
+top: 1762px; /* larger way from top of the page */
+margin: 32px; /* medium margin */    
+}
+
+/* When the screen is less than 900px wide this element will become smaller to fit the smaller screen */
+@media screen and (max-width: 900px) {
+  .image-table-3 table {
+height: 400px; /* smaller height */
+width: 130px; /* smaller width */
+position: absolute; /* adjusting position */
+margin: auto; /* auto margin */
+top: 166px;  /* larger distance from top of page */
+  }
+} 
+
+/* width of scrollbar */
+::-webkit-scrollbar {
+  width: 18px; /* medium width */
+}
+
+/* Track of scrollbar */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2.5px black; /* small display of box shadow */
+  border-radius: 10px; /* rounded corners */
+  border: 7px solid black; /* black outlines border */
+}
+
+/* Handle of scrollbar */
+::-webkit-scrollbar-thumb {
+border-radius: 10px; /* rounded corners */
+background-color: #0ae; /* blue background color */
+background-image: -webkit-linear-gradient(top,
+#bbffbb 0%,
+#a1faa1 50%,
+#81e681 51%,
+#71dc6e 100%); /* gradient of greens */
+}
+
+/* Handle of scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+background-image: -webkit-linear-gradient(top,
+#c6feff 0%,
+#a8eeef 50%,
+#89fdff 51%,
+#55f5f8 100%); /* gradient of blues */
+border-radius: 10px; /* rounded corners */
+} 
