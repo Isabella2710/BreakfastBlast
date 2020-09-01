@@ -97,6 +97,56 @@ cursor: pointer; /* Add a mouse pointer on hover */
 box-shadow: 0 0 23px black; /* small black box-shadow */
 } 
 
+/* Website back to top button to make navigation easier */ 
+#myBtn {
+  display: inline-block; /* Hidden by default */
+  position: absolute; /* Fixed/sticky position so it dosnt move */
+  top: 2334px; 
+  left: 624px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Arial black'; 
+}
+
+/* When the screen is less than 900px wide the button will change positoning */
+@media screen and (max-width: 900px) {
+  .#myBtn {
+ display: inline-block; /* Hidden by default */
+  position: absolute; /* Fixed/sticky position so it dosnt move */
+  top: 88px; 
+  left: 624px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Arial black';  
+  }
+} 
+
+/* Website back to top button hover effect */ 
+#myBtn:hover {
+background-color: #89fdff; /* Background color is light blue on hover */
+cursor : pointer; /* Add a mouse pointer on hover */
+box-shadow: 0 0 23px black; 
+}
+
+/* Website back to top button transition */ 
+#myBtn {
+  Transition: all 0.3s  ease 0s; /* Adds light/small transition on hover */
+} 
+
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container {
@@ -232,18 +282,18 @@ border-radius: 24px; /* rounded corners */
 width: 383px; /* large width to fit readable images */ 
 height: 607px; /* large height to fit readable images */
 position: absolute; /* adjustable position */ 
-top: 549px; /* large way from top of the page */ 
+top: 566px; /* large way from top of the page */ 
 margin: 32px; /* medium margin */
 }
 
 /* When the screen is less than 900px wide this element will become smaller to fit the smaller screen */
 @media screen and (max-width: 900px) {
   .image-table table {
-height: 400px; /* smaller height */
-width: 130px; /* smaller width */
+height: auto; /* auto height to fit screen */
+width: 100%; /* 100% width to fit smaller screen */
 position: absolute; /* adjusting position */
 margin: 32px; /* small margin */
-top: 754px;  /* larger distance from top of page due to compressed screen size */
+top: 734px;  /* larger distance from top of page due to compressed screen size */
   }
 } 
 
@@ -251,15 +301,15 @@ top: 754px;  /* larger distance from top of page due to compressed screen size *
 width: 383px; /* large width to fit readable images */
 height: 607px; /* large height to fit readable images */
 position: absolute; /* adjustable position */ 
-top: 1168px; /* larger way from top of the page */ 
+top: 1144px; /* larger way from top of the page */ 
 margin: 32px; /* medium margin */      
 } 
 
 /* When the screen is less than 900px wide this element will become smaller to fit the smaller screen */
 @media screen and (max-width: 900px) {
   .image-table-2 table {
-height: 400px; /* smaller height */
-width: 130px; /* smaller width */
+height: auto; /* auto height to fit screen */
+width: 100%; /* 100% width to fit smaller screen */
 position: absolute; /* adjusting position */
 margin: auto; /* auto margin */
 top: 167px;  /* larger distance from top of page */
@@ -270,18 +320,18 @@ top: 167px;  /* larger distance from top of page */
 width: 383px; /* large width to fit readable images */
 height: 607px; /* large height to fit readable images */
 position: absolute; /* adjustable position */ 
-top: 1762px; /* larger way from top of the page */
+top: 1732px; /* larger way from top of the page */
 margin: 32px; /* medium margin */    
 }
 
 /* When the screen is less than 900px wide this element will become smaller to fit the smaller screen */
 @media screen and (max-width: 900px) {
   .image-table-3 table {
-height: 400px; /* smaller height */
-width: 130px; /* smaller width */
+height: auto; /* auto height to fit screen */
+width: 100%; /* 100% width to fit smaller screen */
 position: absolute; /* adjusting position */
 margin: auto; /* auto margin */
-top: 166px;  /* larger distance from top of page */
+top: 156px;  /* larger distance from top of page */
   }
 } 
 
