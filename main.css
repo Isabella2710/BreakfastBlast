@@ -1,7 +1,7 @@
 /* Banner styling */ 
 .banner { 
-height: auto; 
-width: 1408px; 
+height: auto; /* Auto height to fit screen */
+width: 1408px; /* Width for banner to fit screen */
 } 
 
 /* When the screen is less than 900px wide the banner will become smaller */
@@ -170,7 +170,7 @@ right: auto; /* distance from right side of page */
   }
 }
 
-/* Fading animation styles */
+/* Fading animation javascript code from W3Schools "How TO - Slideshow. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_js_slideshow.asp" */
 .fade {
   -webkit-animation-name: fade; /* fading image transition */
   -webkit-animation-duration: 2.5s; /* fading image duration */
@@ -178,17 +178,16 @@ right: auto; /* distance from right side of page */
   animation-duration: 2.5s; /* fading image duration */
 }
 
-/* Fading animation details from W3schools */
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 
-/* Fading animation details */
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* Enf of fading animation javascript code from W3Schools "How TO - Slideshow. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_js_slideshow.asp" */
 
 /*Website side dishes recipe pages banner style*/
 .writing-paragraphs {
