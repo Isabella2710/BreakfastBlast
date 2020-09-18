@@ -4,11 +4,11 @@ height: auto; /* Auto height to fit screen */
 width: 1408px; /* Width for banner to fit screen */
 } 
 
-/* When the screen is less than 900px wide the banner will become smaller */
-@media screen and (max-width: 900px) {
+/* When the screen is less than 1500px wide the banner will become smaller */
+@media screen and (max-width: 1500px) {
   .banner {
-height: auto; 
-width: auto; 
+height: 5%;
+width: 100%; 
   }
 } 
 
@@ -44,7 +44,7 @@ cursor: pointer; /* Add a mouse pointer on hover */
 	text-align: left; /* Text aligned to left */
 	width: 100%; /* full width */
 	margin: 0; /* no margin */
-	padding: 14px; /* small amount of padding */
+	padding: 14px; /* small amount of padding */ 
   }
   .topnav input[type=text] {
 	border: 1px solid #ccc; /* small grey border */
@@ -86,22 +86,6 @@ cursor: pointer; /* Add a mouse pointer on hover */
  Transition: all 0.3s  ease 0s; /* light transition for buttons */
 }
 
-/* When the screen is less than 900px wide the banner will become smaller */
-@media screen and (max-width: 900px) {
-  .button {
-background-color: transparent; /* transparent or no background color */
-  float: left; /* positioning left */
-  padding: 9px 25px; /* some small padding */
-  text-align: center; /* centered text */
-  text-decoration: none; /* no text decoration */
-  display: inline-block; /* position of button is inline-block */
-  font-size: 12px; /* medium font size*/
-  Border: none; /* no border */
-  border-radius: 15px; /* rounded corners */
-  cursor: pointer; /* add a mouse pointer on hover */
-  }
-} 
-
 /* Website button hover effect */ 
 .button:hover {
 background-color: #89fdff; /* background color is light blue */
@@ -111,19 +95,6 @@ padding-left: 15px; /* moves to the left on hover */
 padding-right: 15px; /* moves to the left on hover */
 cursor: pointer; /* Add a mouse pointer on hover */
 box-shadow: 0 0 23px black; /* small black box-shadow */
-} 
-
-/* When the screen is less than 900px wide the banner will become smaller */
-@media screen and (max-width: 900px) {
-  .button:hover {
-background-color: #89fdff; /* background color is light blue */
-font-size: 31px; /* bigger font size*/
-margin-left: -10px; /* moves to the left on hover */
-padding-left: 15px; /* moves to the left on hover */
-padding-right: 15px; /* moves to the left on hover */
-cursor: pointer; /* Add a mouse pointer on hover */
-box-shadow: 0 0 23px black; /* small black box-shadow */
-  }
 } 
 
 /* Website back to top button to make navigation easier */ 
@@ -161,9 +132,8 @@ box-shadow: 0 0 23px black; /* small black box-shadow */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   font-family: 'Arial black';  
-  }
+    } 
 } 
-
 /* Website back to top button hover effect */ 
 #myBtn:hover {
 background-color: #89fdff; /* Background color is light blue on hover */
