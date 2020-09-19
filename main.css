@@ -39,12 +39,14 @@ cursor: pointer; /* Add a mouse pointer on hover */
 /* When the screen is less than 900px wide the links will stack vertically instead of horizontally */
 @media screen and (max-width: 900px) {
   .topnav a, .topnav input[type=text] {
-	float: none; /* no float */
-	display: block; /* display is in block */
-	text-align: left; /* Text aligned to left */
-	width: 100%; /* full width */
-	margin: 0; /* no margin */
-	padding: 14px; /* small amount of padding */ 
+float: none; /* no float */
+display: block; /* display is in block */
+position: relative; /* display is in block */
+top: -94px; /* close to top of page */ 
+text-align: left; /* Text aligned to left */
+width: 100%; /* full width */
+margin: 0; /* no margin */
+padding: 14px; /* small amount of padding */ 
   }
   .topnav input[type=text] {
 	border: 1px solid #ccc; /* small grey border */
@@ -164,7 +166,7 @@ max-width: 300px; /* medium sized max width */
 max-height: 600px; /* medium sized max height */
 position: absolute; /* adjusting position */
 margin: auto; /* auto margin */
-top: 482px;  /* distance from top of page */
+top: 362px;  /* distance from top of page */
 right: auto; /* distance from right side of page */
   }
 }
